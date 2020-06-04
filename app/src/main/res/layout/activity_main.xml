@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:layout_margin="10dp"
+	tools:context="com.sriyanksiddhartha.realmdemo.MainActivity">
+
+	<EditText
+		android:id="@+id/etPersonName"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Person Name"/>
+
+	<EditText
+		android:id="@+id/etAge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Age"/>
+
+	<EditText
+		android:id="@+id/etSocialAccount"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Social Account"/>
+
+	<EditText
+		android:id="@+id/etStatus"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Status"/>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Add To Realm [ Using Main Thread ]"
+		android:onClick="addUserToRealm_Synchronously"/>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Add To Realm [ In Background Thread ]"
+		android:onClick="addUserToRealm_ASynchronously"/>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Display All"
+		android:onClick="displayAllUsers"/>
+
+</LinearLayout>
